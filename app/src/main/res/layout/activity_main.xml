@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.akwares.mnist.MainActivity">
+
+    <com.akwares.mnist.Drawing
+        android:id="@+id/drawingSpace"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:layout_height="300dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="340dp"
+        android:background="@color/materialGrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout">
+
+            <Button
+                android:id="@+id/detect"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:background="@color/materialBlue"
+                android:text="Detect" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/materialLightBlue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="Shake to clear" />
+
+            <Button
+                android:id="@+id/examples"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/materialLightBlue"
+                android:text="Show Examples" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="89dp"
+            android:layout_toEndOf="@+id/relativeLayout"
+            android:textColor="@color/materialLightBlue"
+            android:textSize="70dp" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
